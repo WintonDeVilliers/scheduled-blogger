@@ -1,0 +1,24 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "name": "How to write a Blog",
+      "slug": "how-to-write-a-blog",
+      "author": "Manny Duke",
+      "date": "June 09, 2021",
+      "time": "10:00 PM EST",
+      "description": "a blog about the thought process that goes into blogging",
+      "image": "/images/blog1.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Write Engaging Captions",
+      "slug": "write-engaging-captions",
+      "author": "Diana Rumble",
+      "date": "June 09, 2021",
+      "time": "10:00 PM EST",
+      "description": "how to captivate your reader",
+      "image": "/images/blog2.jpeg"
+    }
+  ]
+}
