@@ -7,14 +7,13 @@ import Showcase from './Showcase'
 import {useRouter} from 'next/router'
 
 export default function Layout({title, keywords, description, children}) {
-    const router = useRouter();
+    const router = useRouter()
     return (
         <div>
         <Head>
             <title>{title}</title>
             <meta name="keywords" content={keywords}/>
         </Head>
-
 
         <Header />
 

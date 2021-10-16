@@ -1,8 +1,8 @@
 const {blogs} = require('./data.json')
 
 export default (req, res) =>  {
-    const evt = blogs.filter((ev) => ev.slug === req.query.slug)
-    res.status(200).json(evt)
+    const evt = blogs.filter(ev => ev.slug === req.query.slug)
+    
 
     if(req.method ==='GET'){
         res.status(200).json(evt)
