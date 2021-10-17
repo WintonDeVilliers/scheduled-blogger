@@ -3,22 +3,26 @@
     {
       "id": "1",
       "name": "How to write a Blog",
+      "category":"Communication",
       "slug": "how-to-write-a-blog",
       "author": "Manny Duke",
       "date": "June 09, 2021",
       "time": "10:00 PM EST",
       "description": "a blog about the thought process that goes into blogging",
-      "image": "/images/blog1.jpeg"
+      "image": "/images/blog1.jpeg",
+      "location":"125 Mandela Road Cape Town 7705"
     },
     {
       "id": "2",
       "name": "Write Engaging Captions",
+      "category":"Digital Marketing",
       "slug": "write-engaging-captions",
       "author": "Diana Rumble",
       "date": "June 09, 2021",
       "time": "10:00 PM EST",
       "description": "how to captivate your reader",
-      "image": "/images/blog2.jpeg"
+      "image": "/images/blog2.jpeg",
+      "location": "116 comissioner sreet Johannesburg 1205"
     }
   ]
 }

@@ -18,7 +18,7 @@ export default function BlogsPage({blogs}) {
 }
 // getServerSideProps(){}
 export async function getStaticProps(){
-    const res = await fetch(`${API_URL}/api/blogs`) 
+    const res = await fetch(`${API_URL}/blogs?_sort=date:ASC`) 
     const blogs = await res.json()
 
     return {

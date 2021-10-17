@@ -10,7 +10,7 @@ export default function BlogsPage({evt}) {
         console.log('delete'); 
     }
     return (
-        <Layout>
+        <Layout> 
             <div className={styles.blog}>
                 <div className={styles.controls}>
                     <Link href={`/blogs/edit/${evt.id}`}>
@@ -24,12 +24,12 @@ export default function BlogsPage({evt}) {
                 </div>
 
                 <span>
-                    {evt.date} at {evt.time}
+                    {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
                 </span>
                 <h1>{evt.name} </h1>
                 {evt.name && (
                     <div className={styles.image}>
-                        <Image src={evt.image} width={960} height={600} />
+                        <Image src={evt.image.formats.medium.url} width={960} height={600} />
                     </div>
                 )}
 
@@ -52,7 +52,7 @@ export default function BlogsPage({evt}) {
 
 
 export async function getStaticPaths(){
-    const res = await fetch(`${API_URL}/api/blogs`)
+    const res = await fetch(`${API_URL}/blogs`)
     const blogs = await res.json()
     const paths = blogs.map(evt => ({
         params: {slug: evt.slug}
@@ -66,7 +66,7 @@ export async function getStaticPaths(){
 
 export async function getStaticProps({params:
     {slug}}) {
-        const res = await fetch(`${API_URL}/api/blogs/${slug}`)
+        const res = await fetch(`${API_URL}/blogs?slug=${slug}`)
         const blogs = await res.json()
 
 

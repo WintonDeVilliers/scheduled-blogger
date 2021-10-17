@@ -24,11 +24,11 @@ export default function HomePage({blogs}) {
 }
 // getServerSideProps(){}
 export async function getStaticProps(){
-    const res = await fetch(`${API_URL}/api/blogs`) 
+    const res = await fetch(`${API_URL}/blogs?_sort=date:ASC&_limit=3`) 
     const blogs = await res.json()
 
     return {
-        props: {blogs: blogs.slice(0, 1)},
+        props: {blogs},
         revalidate: 1,
     }
 }
