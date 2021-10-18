@@ -1,34 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About this project,
+This project is built using the below exerpt as a guideline,
 
-## Getting Started
+## Tech stack
+JavaScript // CSS // HTML // Strapi(CMS) , Cloudinary(images) // Heroku(deployment) Vercel(deployment) 
 
-First, run the development server:
+## Exerpt
+To ensure that bloggers stay on their respective schedules, we would like you to allow them to set regular deadlines for submitting their articles. They should also be able to set their how much time before the deadline they need to be reminded to submit their documents. They can also set multiple reminders. However, each reminder would require acknowledgement from the blogger before firing the next reminder if they have not yet submitted. If they miss a deadline, you may give them a friendly reminder that they have missed the deadline for their submission. Late submissions should be recognised as such.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can safely assume that the audiences will most likely belong to the Commonwealth and thus be universally most comfortable with British English. To that end, we would like you to perform rudimentary spelling corrections and basic grammar checks upon submission. The blogger can simply be informed of a spelling correction and be required to rectify the grammatical errors. Once the grammatical errors are resolved, they can resubmit and the spellings will be corrected. For example, ‘analyze’ would be corrected to ‘analyse’.
