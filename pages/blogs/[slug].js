@@ -4,10 +4,30 @@ import styles from '../../styles/Blog.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaPencilAlt, FaTimes} from 'react-icons/fa'
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { useRouter} from 'next/router'
+
 
 export default function BlogsPage({evt}) {
-    const deleteBlog = (e) => {
-        console.log('delete'); 
+    const router = useRouter()
+
+    const deleteBlog = async (e) => {
+        if (confirm('Are you sure ?')){
+
+            const res = await fetch(`${API_URL}/blogs/${evt.id}`, {
+                method: 'DELETE'
+            })
+            
+            const data = await res.json() 
+
+            if (!res.ok){
+                toast.error(data.message)
+            } else {
+                router.push('/blogs')
+            }
+        }
+
     }
     return (
         <Layout> 
@@ -27,9 +47,11 @@ export default function BlogsPage({evt}) {
                     {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
                 </span>
                 <h1>{evt.name} </h1>
+                <ToastContainer />
                 {evt.name && (
                     <div className={styles.image}>
-                        <Image src={evt.image.formats.medium.url} width={960} height={600} />
+                        {/* <Image src={evt.image.formats.medium.url} width={960} height={600} /> */}
+                        <Image src={evt.image ? evt.image.formats.medium.url :'/images/default_image.jpeg'} width={170} height={100}/>
                     </div>
                 )}
 
