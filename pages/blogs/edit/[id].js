@@ -51,7 +51,7 @@ export default function EditBlogPage({evt}) {
             toast.error('Something went wrong')
         }else {
             const evt = await res.json() 
-            router.push(`/blogs/${evt.slug}`)
+            router.push(`/blogs/${evt.slug}`) 
         }
         // console.log(values)
     }
