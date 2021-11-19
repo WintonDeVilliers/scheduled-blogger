@@ -6,7 +6,7 @@ import BlogItem from '../../components/BlogItem'
 import { API_URL, PER_PAGE } from '../../config/index'
 import Link from 'next/link'
 
-
+ 
 export default function BlogsPage({blogs, page, total}) {
 
 
